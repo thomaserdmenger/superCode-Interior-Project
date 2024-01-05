@@ -275,7 +275,6 @@ header div p span {
 .blog {
   background-color: var(--color-gray-background);
   padding: 3.75rem 10vw;
-  margin-bottom: 3.75rem;
 }
 
 .blog .works-header div:first-of-type {
@@ -298,4 +297,32 @@ header div p span {
 
 .blog-item p:last-of-type {
   margin-bottom: 1.375rem;
+}
+
+/* ! QUOTE SECTION */
+
+.quote {
+  background: url(./assets/images/background-3.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  padding: 100px 0;
+}
+
+.quote .overlay {
+  margin-bottom: 3.75rem;
+}
+
+.quote p {
+  font-family: AlegreyaSans;
+  font-size: 2.25rem;
+}
+
+.quote a {
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  display: flex;
 }
