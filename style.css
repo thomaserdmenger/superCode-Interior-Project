@@ -25,7 +25,7 @@
   --color-black: #000;
   --color-gray-dark: #3a4f52;
   --color-gray-light: #6a6a6a;
-  --color-gray-background: #c3c9cc;
+  --color-gray-background: #f1f0f0;
   --color-blue-light: #4da7ca;
   --color-blue-dark: #2b3e51;
 }
@@ -50,6 +50,29 @@ h1 {
   font-family: NixieOne;
   font-size: 3.5rem;
   font-weight: 400;
+}
+
+h2 {
+  font-family: AlegreyaSans;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: var(--color-gray-dark);
+}
+
+a {
+  all: unset;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+.viewAll {
+  border: 1px solid var(--color-gray-dark);
+  padding: 0.75rem 1.0625rem;
+}
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875rem;
 }
 
 /* ! HEADER */
@@ -90,7 +113,7 @@ header div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: c;
+  justify-content: center;
   gap: 14px;
   margin-bottom: 22.5rem;
 }
@@ -103,4 +126,71 @@ header div p {
 
 header div p span {
   font-size: 1.1rem;
+}
+
+/* ! LATEST WORKS SECTION */
+
+.works {
+  background-color: var(--color-gray-background);
+  color: var(--color-gray-light);
+  padding-bottom: 3.6875rem;
+  padding: 3.75rem 10vw;
+}
+
+.works-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-start;
+  margin-bottom: 3.75rem;
+}
+
+.works-header p {
+  color: var(--color-gray-light);
+}
+
+.works-header div:nth-of-type(2) {
+  margin-top: 0.75rem;
+}
+
+.works-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.works-images-item {
+  min-height: 214px;
+  width: 360px;
+}
+
+.works-images-item:nth-of-type(1) {
+  background: url(./assets/images/latest-1.png) no-repeat center;
+  background-size: cover;
+}
+
+.works-images-item:nth-of-type(2) {
+  background: url(./assets/images/latest-2.png) no-repeat center;
+  background-size: cover;
+}
+
+.works-images-item:nth-of-type(3) {
+  background: url(./assets/images/latest-3.png) no-repeat center;
+  background-size: cover;
+}
+
+.works-images-item:nth-of-type(4) {
+  background: url(./assets/images/latest-4.png) no-repeat center;
+  background-size: cover;
+}
+
+.works-images-item:nth-of-type(5) {
+  background: url(./assets/images/latest-5.png) no-repeat center;
+  background-size: cover;
+}
+
+.works-images-item:nth-of-type(6) {
+  background: url(./assets/images/latest-6.png) no-repeat center;
+  background-size: cover;
 }
