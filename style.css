@@ -29,6 +29,7 @@
   --color-blue-light: #4da7ca;
   --color-blue-dark: #2b3e51;
   --color-overlay-effect: hsla(0, 0%, 0%, 0.2);
+  --transition: 0.5s;
 }
 
 /* ! BASIC */
@@ -74,12 +75,25 @@ a {
 .viewAll {
   border: 1px solid var(--color-gray-dark);
   padding: 0.75rem 1.0625rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.viewAll:hover {
+  background-color: var(--color-gray-dark);
+  border: 1px solid var(--color-gray-dark);
+  color: var(--color-white);
 }
 
 .link-blue {
   color: var(--color-blue-light);
   cursor: pointer;
   font-size: 14px;
+  transition: var(--transition);
+}
+
+.link-blue:hover {
+  color: var(--color-blue-dark);
 }
 
 p {
@@ -120,6 +134,7 @@ header svg {
   fill: var(--color-white);
   height: 28px;
   width: 24px;
+  cursor: pointer;
 }
 
 header nav {
@@ -132,6 +147,11 @@ header nav {
 header nav p {
   font-family: AlegeyaSC-Medium;
   font-size: 1.625rem;
+  transition: var(--transition);
+}
+
+header nav p:hover {
+  transform: scale(1.05);
 }
 
 header nav p span {
@@ -467,4 +487,5 @@ textarea::placeholder {
 input[type='submit'] {
   width: 35%;
   text-align: center;
+  cursor: pointer;
 }
