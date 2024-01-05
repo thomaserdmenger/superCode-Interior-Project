@@ -1,3 +1,35 @@
+@font-face {
+  font-family: NixieOne;
+  src: url(./assets/fonts/NixieOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: AlegreyaSans;
+  src: url(./assets/fonts/AlegreyaSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: AlegeyaSC-Medium;
+  src: url(./assets/fonts/AlegreyaSans-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: AlegeyaSC-Regular;
+  src: url(./assets/fonts/AlegreyaSC-Regular.ttf);
+  font-weight: 400;
+}
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray-dark: #3a4f52;
+  --color-gray-light: #6a6a6a;
+  --color-gray-background: #c3c9cc;
+  --color-blue-light: #4da7ca;
+  --color-blue-dark: #2b3e51;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
