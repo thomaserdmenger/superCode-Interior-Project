@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: AlegeyaSC-Medium;
-  src: url(./assets/fonts/AlegreyaSans-Medium.ttf);
+  src: url(./assets/fonts/AlegreyaSC-Medium.ttf);
   font-weight: 500;
 }
 
@@ -30,12 +30,77 @@
   --color-blue-dark: #2b3e51;
 }
 
+/* ! BASIC */
+
 * {
   box-sizing: border-box;
   padding: 0;
-  height: 0;
+  margin: 0;
 }
 
 img {
   max-width: 100%;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: NixieOne;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+/* ! HEADER */
+
+header {
+  background: url(./assets/images/background-1.png) no-repeat center;
+  background-size: cover;
+  padding: 2.5vw;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+header svg {
+  fill: var(--color-white);
+  height: 28px;
+  width: 24px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 17.8125rem;
+}
+
+header nav p {
+  font-family: AlegeyaSC-Medium;
+  font-size: 1.625rem;
+}
+
+header nav p span {
+  font-size: 2rem;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: c;
+  gap: 14px;
+  margin-bottom: 22.5rem;
+}
+
+header div p {
+  font-family: AlegeyaSC-Regular;
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+header div p span {
+  font-size: 1.1rem;
 }
